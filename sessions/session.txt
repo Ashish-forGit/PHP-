@@ -1,0 +1,12 @@
+session store data on the server rather thn users computer
+in a session based environment every user is identified through a unique number called session identifier SID 
+
+SID is useed to link each user with theiur own information onthe server 
+way to store information 
+
+to begin a new session simply call the php session_start() function it will create a new session
+Session variables are set with PHP global variable $_session
+$SESSION["user"] ; value of partiacular session variable
+
+to destory a session completey simply call session_destroy() function 
+session_unset(); removing all session variables

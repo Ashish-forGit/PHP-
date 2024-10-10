@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"> <br>
+        
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Enter your age"> <br>
+        
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email"> <br>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password"> <br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            
+            const name = document.getElementById("name").value;
+            const age = document.getElementById("age").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+           
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+          
+            if (name === "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            if (age === "" || age < 1 || age > 120) {
+                alert("Please enter a valid age (1-120)");
+                return false;
+            }
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+
+            
+            alert("Form submitted successfully");
+            return true; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+a cookie is a small text file that lets you store a small amount of data on the user computer
+- **session cookie**: a cookie that is deleted when the user closes the browser
+save the user prefernces data 
+setcookie(name,value,expire,path,domain,security)
+- **name**: the name of the cookie
+- **value**: the value of the cookie
+- **expire**: the time when the cookie expires (in seconds since 1/1/1970)
+- **path**: the path of the cookie (default is the current path)
+- **domain**: the domain of the cookie (default is the current domain)
+- **security**: the security level of the cookie (default is 0 for HTTP and 1 for HTTPS)
+
+php $_cookie superglobal variable is used to retrieve a cookie value
+
+php isset() function is use dto check if the cookie is set or not before accessing its value.
+
+
+to delete the cookie use of set cookie taking negative time and unset the value then the cookie will be deleted
