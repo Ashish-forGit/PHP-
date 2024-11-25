@@ -1,0 +1,4 @@
+[2024-10-29 09:05:27] Error: Name field is required in C:\xampp\htdocs\int220\UNIT4\errorhandling\example.php on line 21
+[2024-10-29 09:05:27] Error: Invalid email format in C:\xampp\htdocs\int220\UNIT4\errorhandling\example.php on line 25
+[2024-10-29 09:05:44] Error: Name field is required in C:\xampp\htdocs\int220\UNIT4\errorhandling\example.php on line 21
+[2024-10-29 09:05:44] Error: Invalid email format in C:\xampp\htdocs\int220\UNIT4\errorhandling\example.php on line 25
